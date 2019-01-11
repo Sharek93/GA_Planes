@@ -10,6 +10,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
 import app.AppData;
+import app.MySqlConnection;
 import components.Airfields;
 import components.Airplanes;
 import model.Airplane;
@@ -97,14 +98,12 @@ public class GUI {
 	
 	private void initLayout() {
 		mainFrame.setLayout(new BorderLayout());
-	
 		
 		JScrollPane scrollPane = new JScrollPane(table);
 	
 		mainFrame.add(scrollPane, BorderLayout.CENTER);
 		
 		JPanel panel = new JPanel();
-		//scrollPane.setColumnHeaderView(panel);
 		{
 			JButton startButton = new JButton("Start");
 			startButton.addActionListener(new ActionListener() {
@@ -129,6 +128,15 @@ public class GUI {
 		}	
 		
 		mainFrame.add(panel, BorderLayout.SOUTH);
+		{
+			JButton dbSaveButton = new JButton("Zapisz do bazy");
+			dbSaveButton.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+				MySqlConnection.SavePlanes(airplanes);					
+				}
+			});
+			panel.add(dbSaveButton);
+		}
 		
 		mainFrame.setVisible(true);
 	}

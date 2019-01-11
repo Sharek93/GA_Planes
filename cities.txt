@@ -6,8 +6,8 @@ Smuoce
 Spoala
 Etrines
 Ofrea
-Sciuj Skana
-Smiuv Glal
+Sciuj_Skana
+Smiuv_Glal
 Fosciyrhiel
 Keswustan
 Quscela
@@ -16,8 +16,8 @@ Whora
 Shaibia
 Acheau
 Eswa
-Droei Clesh
-Swiuk Shines
+Droei_Clesh
+Swiuk_Shines
 Magraeca
 Oglaostein
 Atreau
@@ -26,8 +26,8 @@ Skoye
 Cloasal
 Otrait
 Uplal
-Gluef Chistan
-Swao Spesh
+Gluef_Chistan
+Swao_Spesh
 Qochoania
 Estruetan
 Lubral
@@ -36,5 +36,5 @@ Driyland
 Smiesau
 Ustad
 Oshain
-Trie Chesh
-Striu Dros
+Trie_Chesh
+Striu_Dros
